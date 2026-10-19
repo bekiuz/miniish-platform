@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0910">
+  <meta name="description" content="MiniIsh — yosh ijodkorlar va kichik bizneslar uchun kichik raqamli buyurtmalar platformasi.">
+  <meta property="og:title" content="MiniIsh — Ko‘nikmangni ishga aylantir">
+  <meta property="og:description" content="Dizayn, video va web bo‘yicha kichik buyurtmalar. Tajriba to‘pla, portfoliongni rivojlantir.">
+  <meta property="og:type" content="website">
+  <title>MiniIsh — Ko‘nikmangni ishga aylantir</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Asosiy kontentga o‘tish</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="MiniIsh bosh sahifa">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="brand-name">miniish<span class="brand-dot">.</span></span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span>
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Asosiy menyu">
+          <a href="#buyurtmalar">Buyurtmalar</a>
+          <a href="#ijodkorlar">Ijodkorlar</a>
+          <a href="#qanday-ishlaydi">Qanday ishlaydi?</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="button button-quiet button-small" type="button" data-open="creator">Ijodkor bo‘lish</button>
+          <button class="button button-primary button-small" type="button" data-open="new-job">Buyurtma berish <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-space" id="top">
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Yangi avlod ish bozori</div>
+            <h1>Ko‘nikmangni<br><span class="headline-accent">haqiqiy ishga</span><br>aylantir.</h1>
+            <p class="hero-lead">Dizayn, video yoki web bo‘yicha ilk buyurtmangni top. Kichik biznes esa o‘ziga kerakli ijodkorni topadi.</p>
+            <div class="hero-actions">
+              <a class="button button-primary button-large" href="#buyurtmalar">Buyurtmalarni ko‘rish <span aria-hidden="true">↘</span></a>
+              <button class="button button-outline button-large" type="button" data-open="new-job"><span class="plus-icon" aria-hidden="true">＋</span> Buyurtma joylash</button>
+            </div>
+            <div class="hero-proof">
+              <div class="avatar-stack" aria-hidden="true">
+                <span class="avatar avatar-lilac">D</span><span class="avatar avatar-orange">M</span><span class="avatar avatar-blue">S</span>
+              </div>
+              <p><strong>Ko‘nikma bor.</strong> Endi uni ko‘rsatish vaqti.</p>
+            </div>
+            <p class="pilot-note"><span class="pilot-dot"></span> Dastlabki sinov versiyasi — taklif va fikrlar yig‘ilmoqda.</p>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="MiniIsh platformasi interfeysi tasviri">
+            <div class="visual-orbit orbit-one" aria-hidden="true"></div>
+            <div class="visual-orbit orbit-two" aria-hidden="true"></div>
+            <div class="visual-sticker sticker-top"><span class="sticker-icon sticker-purple">✳</span><span><strong>Ijod qil</strong><small>va tajriba orttir</small></span></div>
+            <div class="visual-sticker sticker-bottom"><span class="sticker-icon sticker-lime">↗</span><span><strong>Yangi imkoniyat</strong><small>kichik qadamlardan</small></span></div>
+            <div class="product-window">
+              <div class="window-top">
+                <div class="window-brand"><span class="mini-mark">m</span><span>miniish.</span></div>
+                <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              </div>
+              <div class="window-content">
+                <div class="window-greeting"><span class="window-caption">IMKONIYATLAR MAYDONI</span><span class="online-indicator">● Sinov</span></div>
+                <h2>Keyingi loyihang<br>shu yerdan boshlanadi.</h2>
+                <div class="window-search"><span aria-hidden="true">⌕</span> Dizayn, montaj, web... <span class="search-key">⌘ K</span></div>
+                <div class="window-card">
+                  <div class="job-icon job-icon-violet">✳</div>
+                  <div class="window-job-copy"><strong>Kafe uchun menyu dizayni</strong><span>Grafik dizayn · Namuna</span></div>
+                  <div class="job-budget">250k<span>so‘mdan</span></div>
+                </div>
+                <div class="window-card">
+                  <div class="job-icon job-icon-lime">▶</div>
+                  <div class="window-job-copy"><strong>Reels videosini montaj qilish</strong><span>Video · Namuna</span></div>
+                  <div class="job-budget">200k<span>so‘mdan</span></div>
+                </div>
+                <div class="window-card window-card-muted">
+                  <div class="job-icon job-icon-blue">⌘</div>
+                  <div class="window-job-copy"><strong>Oddiy landing page</strong><span>Web · Namuna</span></div>
+                  <span class="window-arrow">↗</span>
+                </div>
+                <div class="window-footer"><span><i></i> Yangi imkoniyatlarni kashf et</span><span class="window-footer-mark">m.</span></div>
+              </div>
+            </div>
+            <div class="floating-star" aria-hidden="true">✳</div>
+          </div>
+        </div>
+        <div class="container hero-bottom-line"><span>IJODKORLAR UCHUN</span><span class="line"></span><span>KICHIK BIZNESLAR UCHUN</span><span class="line"></span><span>HAQIQIY NATIJA UCHUN</span></div>
+      </section>
+
+      <section class="section-space jobs-section" id="buyurtmalar">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="section-kicker">BIRINCHI QADAM</span>
+              <h2>O‘zingga mos ishni <span class="text-muted">top.</span></h2>
+              <p class="section-description">Kichik topshiriqlar katta tajribaning boshlanishi bo‘lishi mumkin.</p>
+            </div>
+            <button class="button button-outline desktop-job-button" type="button" data-open="new-job">+ Buyurtma qo‘shish</button>
+          </div>
+
+          <div class="jobs-toolbar reveal">
+            <label class="search-box">
+              <span class="search-symbol" aria-hidden="true">⌕</span>
+              <span class="visually-hidden">Buyurtmalarni qidirish</span>
+              <input id="jobSearch" type="search" placeholder="Buyurtma yoki ko‘nikma qidir..." autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+            <div class="filter-list" role="group" aria-label="Buyurtma kategoriyalari" id="categoryFilters">
+              <button class="filter-chip is-active" type="button" data-category="all" aria-pressed="true">Barchasi <span class="filter-count" id="allCount">06</span></button>
+              <button class="filter-chip" type="button" data-category="design" aria-pressed="false">Dizayn</button>
+              <button class="filter-chip" type="button" data-category="video" aria-pressed="false">Video</button>
+              <button class="filter-chip" type="button" data-category="web" aria-pressed="false">Web</button>
+              <button class="filter-chip" type="button" data-category="content" aria-pressed="false">Kontent</button>
+            </div>
+          </div>
+
+          <div class="demo-disclaimer"><span aria-hidden="true">ⓘ</span> Quyidagi kartalar sayt imkoniyatlarini ko‘rsatish uchun tayyorlangan namunalar, haqiqiy buyurtmalar emas.</div>
+          <div class="jobs-grid" id="jobsGrid" aria-live="polite"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            <span class="empty-icon">⌕</span>
+            <h3>Hozircha mos buyurtma yo‘q</h3>
+            <p>Boshqa so‘z bilan qidirib ko‘r yoki barcha kategoriyalarni tanla.</p>
+            <button class="button button-outline" type="button" id="resetFilters">Filtrlarni tozalash</button>
+          </div>
+          <div class="jobs-bottom reveal">
+            <span class="tiny-note"><span class="tiny-dot"></span> Namuna buyurtmalar · MVP bosqichi</span>
+            <button class="text-button" type="button" data-open="new-job">O‘zing buyurtma joyla <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-space creators-section" id="ijodkorlar">
+        <div class="container">
+          <div class="section-heading section-heading-compact reveal">
+            <div>
+              <span class="section-kicker">IMKONIYATLAR MAYDONI</span>
+              <h2>Har bir ko‘nikma <span class="text-muted">qadrli.</span></h2>
+              <p class="section-description">Mukammal mutaxassis bo‘lish shart emas. O‘rganishga tayyorlik va natijani ko‘rsatish muhim.</p>
+            </div>
+            <button class="button button-primary" type="button" data-open="creator">Profil yaratish <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="creator-grid">
+            <article class="creator-card reveal">
+              <div class="creator-card-top"><div class="creator-avatar creator-avatar-one">D<span>✳</span></div><span class="profile-tag">NAMUNA PROFIL</span></div>
+              <h3>Grafik dizayner</h3><p>Brend vizuallari, bannerlar va ijtimoiy tarmoq postlari.</p>
+              <div class="skill-tags"><span>Figma</span><span>Post dizayni</span><span>Banner</span></div>
+              <div class="creator-card-bottom"><span class="creator-level"><i></i> Boshlovchi</span><span class="creator-symbol">↗</span></div>
+            </article>
+            <article class="creator-card reveal">
+              <div class="creator-card-top"><div class="creator-avatar creator-avatar-two">M<span>▶</span></div><span class="profile-tag">NAMUNA PROFIL</span></div>
+              <h3>Video montajchi</h3><p>Reels, qisqa videolar va sodda animatsiyalar.</p>
+              <div class="skill-tags"><span>CapCut</span><span>Reels</span><span>Subtitr</span></div>
+              <div class="creator-card-bottom"><span class="creator-level"><i></i> Boshlovchi</span><span class="creator-symbol">↗</span></div>
+            </article>
+            <article class="creator-card reveal">
+              <div class="creator-card-top"><div class="creator-avatar creator-avatar-three">S<span>⌘</span></div><span class="profile-tag">NAMUNA PROFIL</span></div>
+              <h3>Web yaratuvchi</h3><p>Landing page, portfolio va oddiy veb-sahifalar.</p>
+              <div class="skill-tags"><span>HTML/CSS</span><span>Responsive</span><span>Portfolio</span></div>
+              <div class="creator-card-bottom"><span class="creator-level"><i></i> Boshlovchi</span><span class="creator-symbol">↗</span></div>
+            </article>
+          </div>
+          <div class="creator-footnote"><span aria-hidden="true">✳</span> Bu profillar ham namuna. Ro‘yxatdan o‘tgan haqiqiy ijodkorlar hali yo‘q.</div>
+        </div>
+      </section>
+
+      <section class="section-space process-section" id="qanday-ishlaydi">
+        <div class="container">
+          <div class="process-layout">
+            <div class="process-intro reveal">
+              <span class="section-kicker">ODDIY. TUSHUNARLI. AMALIY.</span>
+              <h2>Kichik ish.<br><span class="text-muted">Katta qadam.</span></h2>
+              <p>MiniIshning maqsadi — yaxshi ko‘nikmani haqiqiy vazifa bilan bog‘lash. Boshlanishida jarayonni qo‘lda ham kuzatib boramiz.</p>
+              <button class="button button-outline" type="button" data-open="creator">Boshlash <span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="process-steps">
+              <article class="process-step reveal"><span class="step-number">01</span><div><h3>Ko‘nikmangni ko‘rsat</h3><p>Qanday ishlarni bajara olishing va nimani o‘rganayotganingni yoz.</p></div><span class="step-icon">✳</span></article>
+              <article class="process-step reveal"><span class="step-number">02</span><div><h3>Mos topshiriqni tanla</h3><p>Vazifa, muddat va budjetni diqqat bilan ko‘rib chiq.</p></div><span class="step-icon">↗</span></article>
+              <article class="process-step reveal"><span class="step-number">03</span><div><h3>Natijani yetkaz</h3><p>Buyurtmachi bilan shartlarni kelish, ishni bajar va tajribangni portfolioga qo‘sh.</p></div><span class="step-icon">✓</span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta-section">
+        <div class="container">
+          <div class="final-cta reveal">
+            <div class="cta-decoration" aria-hidden="true"><span>m</span><i></i><b></b></div>
+            <div class="cta-copy"><span class="section-kicker">BIRINCHI QADAM BUGUN</span><h2>G‘oyang bor. Endi<br>uni <span>ishga tushir.</span></h2><p>Ijodkor bo‘lib ro‘yxatdan o‘t yoki biznesing uchun kerakli vazifani tasvirlab ber.</p></div>
+            <div class="cta-actions"><button class="button button-dark button-large" type="button" data-open="creator">Ijodkor bo‘lish <span aria-hidden="true">↗</span></button><button class="button button-cta-ghost" type="button" data-open="new-job">Buyurtma berish <span aria-hidden="true">→</span></button></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">miniish<span class="brand-dot">.</span></span></a>
+        <p>Ko‘nikmalar va imkoniyatlar uchrashadigan joy.</p>
+        <a class="back-top" href="#top">Yuqoriga qaytish ↑</a>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="currentYear"></span> MiniIsh. Birinchi qadam.</span><span class="footer-status"><i></i> MVP / Sinov versiyasi</span><span class="footer-notice">Hozircha forma ma’lumotlari faqat ushbu brauzerda saqlanadi.</span></div>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal-panel" id="modalPanel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" id="modalClose" aria-label="Oynani yopish">×</button>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
